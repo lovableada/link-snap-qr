@@ -46,8 +46,8 @@ const QRCodeGenerator = () => {
         width: 256,
         margin: 2,
         color: {
-          dark: '#ffffff',
-          light: '#00000000',
+          dark: '#000000',
+          light: '#FFFFFF',
         },
       });
       setQrCodeUrl(qrCodeDataUrl);
@@ -181,6 +181,120 @@ const QRCodeGenerator = () => {
                     </div>
                   </div>
                 )}
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* QR Code Information Section */}
+        <div className="mt-16">
+          <Card className="glass-card p-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold gradient-text mb-4">
+                  O que é um QR Code?
+                </h2>
+                <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+              </div>
+              
+              <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
+                <p className="text-lg leading-relaxed">
+                  O <strong className="text-foreground">QR Code</strong> (Quick Response Code) é um tipo de código bidimensional que pode armazenar 
+                  informações como links, textos, contatos, entre outros dados. Ele foi criado em <strong className="text-foreground">1994 
+                  pela empresa japonesa Denso Wave</strong>, com o objetivo de rastrear peças na indústria automobilística 
+                  de forma rápida e eficiente.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8 my-8">
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      Evolução e Expansão
+                    </h3>
+                    <p className="leading-relaxed">
+                      Com o tempo, seu uso se expandiu exponencialmente para o comércio, marketing digital, 
+                      pagamentos eletrônicos, sistemas de identificação e até em documentos oficiais como 
+                      carteiras de vacinação e certificados digitais.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      Como Funciona
+                    </h3>
+                    <p className="leading-relaxed">
+                      Para utilizá-lo, basta ter um <strong className="text-foreground">aplicativo leitor de QR Code</strong> ou 
+                      a própria câmera do celular (na maioria dos smartphones atuais). Ao apontar a câmera para 
+                      o código, o dispositivo reconhece automaticamente as informações.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 my-8">
+                  <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+                    <Zap className="w-6 h-6 text-primary" />
+                    Vantagens dos QR Codes
+                  </h3>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <strong className="text-foreground">Velocidade:</strong> Acesso instantâneo a informações
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <strong className="text-foreground">Versatilidade:</strong> Armazena diversos tipos de dados
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <strong className="text-foreground">Segurança:</strong> Pode incluir criptografia e validação
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <strong className="text-foreground">Sustentabilidade:</strong> Reduz o uso de papel impresso
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20">
+                  <p className="text-lg font-medium text-foreground">
+                    👉 Em resumo, o QR Code é uma ferramenta <strong>prática, segura e versátil</strong> que 
+                    facilita a conexão entre o mundo físico e o digital, revolucionando a forma como 
+                    compartilhamos e acessamos informações no século XXI.
+                  </p>
+                </div>
+
+                <div className="mt-8 p-6 bg-secondary/20 rounded-xl border border-border/50">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
+                    💡 Curiosidades sobre QR Codes:
+                  </h3>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      Podem armazenar até 4.296 caracteres alfanuméricos
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      Funcionam mesmo com até 30% de dano na imagem
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      São legíveis em qualquer direção (360°)
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary font-bold">•</span>
+                      O nome "Quick Response" refere-se à velocidade de decodificação
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </Card>
