@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import QRCode from 'qrcode';
-import { Download, LinkIcon, Zap } from 'lucide-react';
+import { Download, Link, LinkIcon, Zap, Wallet, MessageCircle, ArrowRight } from 'lucide-react';
+import Header from '@/components/Header';
 
 const QRCodeGenerator = () => {
   const [url, setUrl] = useState('');
@@ -89,18 +91,28 @@ const QRCodeGenerator = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="w-full max-w-4xl mx-auto">
+    <>
+      <Header />
+      <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="w-full max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="p-3 rounded-2xl bg-gradient-primary">
-              <Zap className="w-8 h-8 text-white" />
+              <Link className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-5xl font-bold gradient-text">
-              QR Generator
+              QR Code URL
             </h1>
           </div>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Gere QR Codes PIX para receber pagamentos instantâneos. 
+            Aceito em qualquer banco brasileiro.
+          </p>
+        </div>
+
+
+        <div className="text-center mb-12">
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Transforme qualquer link em um QR Code instantaneamente. 
             Simples, rápido e elegante.
@@ -184,6 +196,60 @@ const QRCodeGenerator = () => {
               </div>
             </div>
           </Card>
+        </div>
+
+        {/* Other QR Code Types */}
+        <div className="mt-12">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-foreground mb-2">
+              Outros tipos de QR Code
+            </h2>
+            <p className="text-muted-foreground">
+              Explore mais opções para suas necessidades
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <RouterLink to="/pix" className="group">
+              <Card className="glass-card p-6 hover:shadow-lg transition-all hover:border-primary/50">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-gradient-primary group-hover:scale-110 transition-transform">
+                    <Wallet className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
+                      QR Code PIX
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Gere QR Codes para receber pagamentos instantâneos via PIX. 
+                      Aceito em todos os bancos brasileiros.
+                    </p>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                </div>
+              </Card>
+            </RouterLink>
+
+            <RouterLink to="/whatsapp" className="group">
+              <Card className="glass-card p-6 hover:shadow-lg transition-all hover:border-[#25D366]/50">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-[#25D366] group-hover:scale-110 transition-transform">
+                    <MessageCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2 text-foreground group-hover:text-[#25D366] transition-colors">
+                      QR Code WhatsApp
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Facilite o contato direto. Clientes iniciam conversa no WhatsApp 
+                      instantaneamente ao escanear.
+                    </p>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-[#25D366] group-hover:translate-x-1 transition-all" />
+                </div>
+              </Card>
+            </RouterLink>
+          </div>
         </div>
 
         {/* QR Code Information Section */}
@@ -301,6 +367,7 @@ const QRCodeGenerator = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
