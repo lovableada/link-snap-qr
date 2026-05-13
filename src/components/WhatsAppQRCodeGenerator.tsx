@@ -7,7 +7,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import QRCode from 'qrcode';
 import { Download, MessageCircle, Smartphone, Zap } from 'lucide-react';
-import Header from '@/components/Header';
 
 const WhatsAppQRCodeGenerator = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -43,21 +42,21 @@ const WhatsAppQRCodeGenerator = () => {
   const generateWhatsAppUrl = (): string => {
     // Remove todos os caracteres não numéricos
     const cleanPhone = phoneNumber.replace(/\D/g, '');
-    
+
     // Adiciona o código do país se não tiver
     let formattedPhone = cleanPhone;
     if (!cleanPhone.startsWith('55') && cleanPhone.length <= 11) {
       formattedPhone = '55' + cleanPhone;
     }
-    
+
     // Cria a URL do WhatsApp
     let whatsappUrl = `https://wa.me/${formattedPhone}`;
-    
+
     // Adiciona a mensagem se houver
     if (message.trim()) {
       whatsappUrl += `?text=${encodeURIComponent(message)}`;
     }
-    
+
     return whatsappUrl;
   };
 
@@ -109,14 +108,14 @@ const WhatsAppQRCodeGenerator = () => {
 
   const downloadQRCode = () => {
     if (!qrCodeUrl) return;
-    
+
     const link = document.createElement('a');
     link.download = 'qrcode-whatsapp.png';
     link.href = qrCodeUrl;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    
+
     toast({
       title: "Download iniciado!",
       description: "Seu QR Code WhatsApp está sendo baixado",
@@ -125,7 +124,6 @@ const WhatsAppQRCodeGenerator = () => {
 
   return (
     <>
-      <Header />
       <div className="min-h-screen flex items-center justify-center p-4">
         <div className="w-full max-w-5xl mx-auto">
           {/* Header */}
@@ -139,7 +137,7 @@ const WhatsAppQRCodeGenerator = () => {
               </h1>
             </div>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Gere QR Codes para iniciar conversas no WhatsApp instantaneamente. 
+              Gere QR Codes para iniciar conversas no WhatsApp instantaneamente.
               Perfeito para atendimento e contato direto.
             </p>
           </div>
@@ -152,7 +150,7 @@ const WhatsAppQRCodeGenerator = () => {
                   <Smartphone className="w-6 h-6 text-[#25D366]" />
                   <h2 className="text-2xl font-semibold">Dados do WhatsApp</h2>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="phoneNumber">Número do WhatsApp</Label>
@@ -182,8 +180,8 @@ const WhatsAppQRCodeGenerator = () => {
                       Esta mensagem aparecerá pré-preenchida na conversa
                     </p>
                   </div>
-                  
-                  <Button 
+
+                  <Button
                     onClick={generateQRCode}
                     disabled={isGenerating}
                     className="w-full h-14 text-lg btn-glow bg-[#25D366] hover:bg-[#20BA5A] text-white"
@@ -205,18 +203,18 @@ const WhatsAppQRCodeGenerator = () => {
             <Card className="glass-card p-8">
               <div className="text-center space-y-6">
                 <h2 className="text-2xl font-semibold">Seu QR Code WhatsApp</h2>
-                
+
                 <div className="flex items-center justify-center">
                   {qrCodeUrl ? (
                     <div className="space-y-6">
                       <div className="p-6 rounded-2xl bg-white inline-block animate-float">
-                        <img 
-                          src={qrCodeUrl} 
-                          alt="QR Code WhatsApp" 
+                        <img
+                          src={qrCodeUrl}
+                          alt="QR Code WhatsApp"
                           className="w-64 h-64"
                         />
                       </div>
-                      
+
                       <Button
                         onClick={downloadQRCode}
                         variant="outline"
@@ -253,11 +251,11 @@ const WhatsAppQRCodeGenerator = () => {
                   </h2>
                   <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
                 </div>
-                
+
                 <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
                   <p className="text-lg leading-relaxed">
-                    O <strong className="text-foreground">QR Code do WhatsApp</strong> é uma forma prática e 
-                    profissional de facilitar o contato com seus clientes, permitindo que eles iniciem uma conversa 
+                    O <strong className="text-foreground">QR Code do WhatsApp</strong> é uma forma prática e
+                    profissional de facilitar o contato com seus clientes, permitindo que eles iniciem uma conversa
                     diretamente com você sem precisar salvar seu número ou digitar mensagens.
                   </p>
 
@@ -268,7 +266,7 @@ const WhatsAppQRCodeGenerator = () => {
                         Como Funciona
                       </h3>
                       <p className="leading-relaxed">
-                        Ao escanear o QR Code, o celular abre automaticamente o WhatsApp com uma 
+                        Ao escanear o QR Code, o celular abre automaticamente o WhatsApp com uma
                         conversa iniciada para o seu número, incluindo a mensagem pré-definida se você configurar uma.
                       </p>
                     </div>
@@ -279,10 +277,10 @@ const WhatsAppQRCodeGenerator = () => {
                         Onde Usar
                       </h3>
                       <p className="leading-relaxed">
-                        Ideal para <strong className="text-foreground">cartões de visita</strong>, 
-                        <strong className="text-foreground"> vitrines</strong>, 
-                        <strong className="text-foreground"> cardápios</strong>, 
-                        <strong className="text-foreground"> eventos</strong> e 
+                        Ideal para <strong className="text-foreground">cartões de visita</strong>,
+                        <strong className="text-foreground"> vitrines</strong>,
+                        <strong className="text-foreground"> cardápios</strong>,
+                        <strong className="text-foreground"> eventos</strong> e
                         <strong className="text-foreground"> materiais impressos</strong> em geral.
                       </p>
                     </div>
@@ -323,7 +321,7 @@ const WhatsAppQRCodeGenerator = () => {
 
                   <div className="text-center p-6 bg-gradient-to-r from-[#25D366]/10 to-secondary/10 rounded-xl border border-[#25D366]/20">
                     <p className="text-lg font-medium text-foreground">
-                      📱 Com mais de <strong>2 bilhões de usuários</strong> ativos, o WhatsApp é a plataforma 
+                      📱 Com mais de <strong>2 bilhões de usuários</strong> ativos, o WhatsApp é a plataforma
                       de mensagens mais popular do Brasil, tornando este QR Code essencial para qualquer negócio.
                     </p>
                   </div>
