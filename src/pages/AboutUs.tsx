@@ -9,11 +9,11 @@ const AboutUs = () => {
         </div>
         <h1 className="text-3xl font-bold gradient-text">Sobre Nós</h1>
       </div>
-      
+
       <article className="prose prose-slate max-w-none text-muted-foreground">
         <h2>A Nossa Missão</h2>
         <p>
-          O <strong>LinkSnap QR</strong> nasceu com um propósito simples: ajudar pessoas e negócios a conectarem o mundo físico ao digital de forma rápida, gratuita e sem fricções.
+          O <strong>QR Online</strong> nasceu com um propósito simples: ajudar pessoas e negócios a conectarem o mundo físico ao digital de forma rápida, gratuita e sem fricções.
         </p>
         <p>
           Nós percebemos que a maioria das ferramentas de QR Code ou exigiam cadastros demorados, ou cobravam mensalidades após alguns acessos, ou exibiam um milhão de popups agressivos. Nosso objetivo é fornecer uma utilidade limpa, veloz e direta ao ponto.

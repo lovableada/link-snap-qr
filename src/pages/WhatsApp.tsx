@@ -11,7 +11,7 @@ const WhatsApp = () => {
       {/* SEO Content Section for AdSense Approval */}
       <article className="prose prose-slate max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-border/50">
         <h2 className="text-2xl font-bold mb-6 gradient-text">Como criar um Link Direto para o WhatsApp?</h2>
-        
+
         <p className="mb-4 text-muted-foreground leading-relaxed">
           O <strong>Gerador de Links e QR Code para WhatsApp</strong> é a ferramenta ideal para empresas e profissionais que desejam agilizar a comunicação com seus clientes. Com apenas um clique, o usuário abre o aplicativo do WhatsApp (ou WhatsApp Web) já com uma mensagem pré-definida e o seu número salvo, sem precisar adicioná-lo na agenda de contatos.
         </p>
@@ -38,7 +38,7 @@ const WhatsApp = () => {
 
         <h3 className="text-xl font-semibold mt-8 mb-4">É realmente gratuito?</h3>
         <p className="mb-4 text-muted-foreground leading-relaxed">
-          Sim! A plataforma <strong className="text-primary">LinkSnap QR</strong> é 100% gratuita. Geramos os códigos localmente, o que significa que nem o seu número nem as mensagens são rastreados ou salvos em banco de dados por nós. Mantemos seu marketing simples, seguro e de uso gratuito! Se precisar, você também pode <a href="/" className="text-primary hover:underline">gerar QR Codes normais</a> ou de <a href="/pix" className="text-primary hover:underline">pagamentos PIX</a> em nossa plataforma.
+          Sim! A plataforma <strong className="text-primary">QR Online</strong> é 100% gratuita. Geramos os códigos localmente, o que significa que nem o seu número nem as mensagens são rastreados ou salvos em banco de dados por nós. Mantemos seu marketing simples, seguro e de uso gratuito! Se precisar, você também pode <a href="/" className="text-primary hover:underline">gerar QR Codes normais</a> ou de <a href="/pix" className="text-primary hover:underline">pagamentos PIX</a> em nossa plataforma.
         </p>
       </article>
     </div>

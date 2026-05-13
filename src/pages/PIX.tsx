@@ -11,7 +11,7 @@ const PIX = () => {
       {/* SEO Content Section for AdSense Approval */}
       <article className="prose prose-slate max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-border/50">
         <h2 className="text-2xl font-bold mb-6 gradient-text">Como gerar um QR Code PIX?</h2>
-        
+
         <p className="mb-4 text-muted-foreground leading-relaxed">
           O <strong>Gerador de QR Code PIX</strong> é a maneira mais rápida e segura de receber pagamentos sem precisar que o cliente digite sua chave manualmente. Com um código QR PIX predefinido, você evita erros de digitação e acelera o checkout no seu estabelecimento, evento ou serviço.
         </p>
@@ -37,7 +37,7 @@ const PIX = () => {
 
         <h3 className="text-xl font-semibold mt-8 mb-4">Gerar QR Code PIX aqui é seguro?</h3>
         <p className="mb-4 text-muted-foreground leading-relaxed">
-          Com certeza! A ferramenta do <strong className="text-primary">LinkSnap QR</strong> utiliza a especificação pública do Banco Central do Brasil (padrão EMV BR Code) e calcula o código CRC16 localmente no seu navegador. Isso significa que <strong>nenhuma informação de chave PIX ou dados pessoais são enviados para nossos servidores</strong>. Se você quiser também <a href="/" className="text-primary hover:underline">encurtar um Link para código QR</a>, confira nossa página inicial.
+          Com certeza! A ferramenta do <strong className="text-primary">QR Online</strong> utiliza a especificação pública do Banco Central do Brasil (padrão EMV BR Code) e calcula o código CRC16 localmente no seu navegador. Isso significa que <strong>nenhuma informação de chave PIX ou dados pessoais são enviados para nossos servidores</strong>. Se você quiser também <a href="/" className="text-primary hover:underline">encurtar um Link para código QR</a>, confira nossa página inicial.
         </p>
       </article>
     </div>

@@ -4,13 +4,13 @@ const PrivacyPolicy = () => {
       <h1 className="text-3xl font-bold mb-8 gradient-text">Política de Privacidade</h1>
       <article className="prose prose-slate max-w-none text-muted-foreground">
         <p><strong>Última atualização: {new Date().toLocaleDateString('pt-BR')}</strong></p>
-        
+
         <h2>1. Introdução</h2>
-        <p>Sua privacidade é importante para nós. É política do LinkSnap QR respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site LinkSnap QR.</p>
+        <p>Sua privacidade é importante para nós. É política do QR Online respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site QR Online.</p>
 
         <h2>2. Informações que coletamos</h2>
         <p>A nossa ferramenta funciona primeiramente no lado do cliente (no seu navegador). Nós <strong>não coletamos</strong> nem armazenamos em nossos servidores os dados inseridos para a criação de Códigos QR, chaves PIX ou números de WhatsApp e mensagens.</p>
-        
+
         <h3>Cookies e Analytics</h3>
         <p>Podemos utilizar cookies de terceiros (como Google Analytics e Google AdSense) para entender como o site é utilizado, quantas vezes ele é visitado, e para veicular anúncios não personalizados ou personalizados de acordo com as políticas do Google. Você tem o direito de desativar os cookies no seu navegador.</p>
 

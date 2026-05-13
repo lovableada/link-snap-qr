@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="p-2 rounded-xl bg-gradient-primary">
               <Zap className="w-5 h-5 text-white" />
             </div>
-            <h3 className="font-bold text-lg gradient-text">LinkSnap QR</h3>
+            <h3 className="font-bold text-lg gradient-text">QR Online</h3>
           </div>
           <p className="text-sm text-muted-foreground">
             A sua ferramenta gratuita e segura para gerar QRCodes rápidos para Links, PIX e WhatsApp. Sem necessidade de cadastro.
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-        &copy; {new Date().getFullYear()} LinkSnap QR. Todos os direitos reservados.
+        &copy; {new Date().getFullYear()} QR Online. Todos os direitos reservados.
       </div>
     </footer>
   );
