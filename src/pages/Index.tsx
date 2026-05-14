@@ -39,8 +39,24 @@ const Index = () => {
 
         <h3 className="text-xl font-semibold mt-8 mb-4">O QR Online é seguro?</h3>
         <p className="mb-4 text-muted-foreground leading-relaxed">
-          Absolutamente! Nossa ferramenta de QR Code gera os códigos instantaneamente direto no seu navegador. Nós não armazenamos as URLs ou os dados digitados em nossos servidores para os códigos gerados aqui, garantindo total privacidade e velocidade. Além das URLs tradicionais, experimente também nossa ferramenta de <a href="/pix" className="text-primary hover:underline">QR Code para PIX</a>, nosso gerador de <a href="/whatsapp" className="text-primary hover:underline">Links de WhatsApp</a> e agora a nova opção de <a href="/wifi" className="text-primary hover:underline">QR Code para WiFi</a>.
+          Absolutamente! Nossa ferramenta de QR Code gera os códigos instantaneamente direto no seu navegador. Nós não armazenamos as URLs ou os dados digitados em nossos servidores para os códigos gerados aqui, garantindo total privacidade e velocidade. Além das URLs tradicionais, experimente também nossa ferramenta de <a href="/pix" className="text-primary hover:underline">QR Code para PIX</a>, nosso gerador de <a href="/whatsapp" className="text-primary hover:underline">Links de WhatsApp</a>, acesso à rede no <a href="/wifi" className="text-primary hover:underline">QR Code para WiFi</a> e nosso moderníssimo <a href="/vcard" className="text-primary hover:underline">Cartão de Visita Digital (VCard)</a>.
         </p>
+
+        <h3 className="text-xl font-semibold mt-8 mb-4">Por que o QR Code está em toda parte hoje?</h3>
+        <p className="mb-4 text-muted-foreground leading-relaxed">
+          A adoção em massa dos QR Codes ocorreu principalmente devido à enorme base de smartphones no mundo todo, onde câmeras nativas já são equipadas com tecnologia de leitura. Diferentes setores do mercado incorporaram a tecnologia:
+        </p>
+        <ul className="list-disc list-inside mb-6 text-muted-foreground space-y-2">
+          <li><strong>Restaurantes e Bares:</strong> Com menus digitais, as empresas economizam verba em papel e facilitam as transações rápidas na hora do pagamento com o <a href="/pix" className="text-primary hover:underline">PIX</a>.</li>
+          <li><strong>Eventos e Credenciamento:</strong> QR Codes em crachás aceleram as entradas eliminando filas monstruosas na conferência.</li>
+          <li><strong>Setor Imobiliário:</strong> Placas de "Vende-se" na porta do imóvel direcionam o comprador pelo celular instantaneamente para a simulação de um Tour Virtual.</li>
+        </ul>
+        <div className="bg-primary/5 p-6 rounded-xl border border-primary/10 mt-6">
+          <p className="font-semibold text-foreground mb-2">Dica de Sucesso 🚀</p>
+          <p className="text-muted-foreground text-sm">
+            Para garantir que a leitura de seus QR Codes funcione em 100% dos casos, procure imprimi-los com um <strong>bom contraste de cor</strong> (idealmente o código nas cores escuras e o fundo em cor clara), respeitando as margens criadas automaticamente. Teste a impressão com seu próprio celular antes de lançar o material no mercado!
+          </p>
+        </div>
       </article>
     </div>
   );

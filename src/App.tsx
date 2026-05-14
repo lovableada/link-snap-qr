@@ -13,6 +13,7 @@ import TermsOfUse from "./pages/TermsOfUse";
 import AboutUs from "./pages/AboutUs";
 import FAQ from "./pages/FAQ";
 import WiFi from "./pages/WiFi";
+import VCard from "./pages/VCard";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/pix" element={<PIX />} />
               <Route path="/whatsapp" element={<WhatsApp />} />
               <Route path="/wifi" element={<WiFi />} />
+              <Route path="/vcard" element={<VCard />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsOfUse />} />

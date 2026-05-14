@@ -23,6 +23,7 @@ const Footer = () => {
             <li><Link to="/pix" className="hover:text-primary transition-colors">QR Code para PIX</Link></li>
             <li><Link to="/whatsapp" className="hover:text-primary transition-colors">QR Code para WhatsApp</Link></li>
             <li><Link to="/wifi" className="hover:text-primary transition-colors">QR Code para WiFi</Link></li>
+            <li><Link to="/vcard" className="hover:text-primary transition-colors">QR Code para VCard</Link></li>
           </ul>
         </div>
         <div>
