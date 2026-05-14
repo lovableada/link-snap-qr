@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LinkIcon, Wallet, MessageCircle, Zap, Menu, X } from 'lucide-react';
+import { LinkIcon, Wallet, MessageCircle, Zap, Menu, X, Wifi } from 'lucide-react';
 
 const Header = () => {
   const location = useLocation();
@@ -9,7 +9,8 @@ const Header = () => {
   const navItems = [
     { path: '/', label: 'QR por Link', icon: LinkIcon },
     { path: '/pix', label: 'QR PIX', icon: Wallet },
-    { path: '/whatsapp', label: 'QR WhatsApp', icon: MessageCircle }
+    { path: '/whatsapp', label: 'QR WhatsApp', icon: MessageCircle },
+    { path: '/wifi', label: 'QR WiFi', icon: Wifi }
   ];
 
   return (

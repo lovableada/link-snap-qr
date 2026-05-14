@@ -22,6 +22,7 @@ const Footer = () => {
             <li><Link to="/" className="hover:text-primary transition-colors">QR Code para URL</Link></li>
             <li><Link to="/pix" className="hover:text-primary transition-colors">QR Code para PIX</Link></li>
             <li><Link to="/whatsapp" className="hover:text-primary transition-colors">QR Code para WhatsApp</Link></li>
+            <li><Link to="/wifi" className="hover:text-primary transition-colors">QR Code para WiFi</Link></li>
           </ul>
         </div>
         <div>
@@ -30,6 +31,7 @@ const Footer = () => {
             <li><Link to="/about" className="hover:text-primary transition-colors">Sobre Nós</Link></li>
             <li><Link to="/terms" className="hover:text-primary transition-colors">Termos de Uso</Link></li>
             <li><Link to="/privacy" className="hover:text-primary transition-colors">Política de Privacidade</Link></li>
+            <li><Link to="/faq" className="hover:text-primary transition-colors">Perguntas Frequentes (FAQ)</Link></li>
           </ul>
         </div>
       </div>

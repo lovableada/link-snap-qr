@@ -11,6 +11,8 @@ import { Layout } from "./components/Layout";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import AboutUs from "./pages/AboutUs";
+import FAQ from "./pages/FAQ";
+import WiFi from "./pages/WiFi";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +27,8 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/pix" element={<PIX />} />
               <Route path="/whatsapp" element={<WhatsApp />} />
+              <Route path="/wifi" element={<WiFi />} />
+              <Route path="/faq" element={<FAQ />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsOfUse />} />
               <Route path="/about" element={<AboutUs />} />
